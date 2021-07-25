@@ -3,10 +3,10 @@ const fs = require('fs')
 const formatFile = require("../utils/formatFile");
 const assert = require("chai").assert;
 
-describe("Format row", () => {
+describe("Format file", () => {
 
     it("show return a valid row object", () => {
-        const request = fs.readFileSync('./tests/sample_booking_requests.txt', 'utf8')
+        const request = fs.readFileSync('pages/api/tests/sample_booking_requests.txt', 'utf8')
 
         const row = formatFile(request)
 
